@@ -3,6 +3,8 @@
   <head>
     <title>{{ title }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- Load the script "js/main.js" as our entry point -->
+    <script data-main="javascripts/main" src="javascripts/libs/require/require.min.js"></script>
   </head>
   <body>
     <h1>{{ title }}</h1>

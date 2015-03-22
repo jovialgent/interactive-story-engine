@@ -1,0 +1,201 @@
+.ui-datepicker
+{
+    font-size: 9pt;
+
+    width: 216px;
+    height: auto;
+    margin: 5px auto 0;
+
+    .text_normal;
+    .box-shadow(0px 0px 10px 0px rgba(0, 0, 0, .5));
+    a
+    {
+        text-decoration: none;
+    }
+    table
+    {
+        width: 100%;
+    }
+    thead
+    {
+        border-bottom: 1px solid #bbb;
+        background-color: #f7f7f7;
+        background-image:    -moz-linear-gradient(top,  #f7f7f7 0%, #f1f1f1 100%);
+        background-image: -webkit-gradient(linear, left top, left bottombottom, color-stop(0%,#f7f7f7), color-stop(100%,#f1f1f1));
+        background-image: -webkit-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+        background-image:      -o-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+        background-image:     -ms-linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+        background-image:         linear-gradient(top,  #f7f7f7 0%,#f1f1f1 100%);
+
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f1f1f1',GradientType=0 );
+    }
+    th
+    {
+        font-size: 7pt;
+
+        padding: 5px 0;
+
+        text-transform: uppercase;
+
+        color: #666;
+       
+
+        
+        text-align: center;
+    }
+    tbody
+    {
+        td
+        {
+            padding: 0;
+
+            border-right: 1px solid @grey;
+            &:last-child
+            {
+                border-right: 0;
+            }
+            span,
+            a
+            {
+                font-weight: bold;
+                line-height: 30px;
+
+                display: inline-block;
+
+                width: 30px;
+                height: 30px;
+
+                text-align: center;
+
+                color: #666;
+                
+                
+            }
+        }
+        tr
+        {
+            border-bottom: 1px solid @grey;
+            &:last-child
+            {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.ui-datepicker-calendar .ui-state-default {  
+    background-color: lighten(@grey, 40%); 
+    color:darken(@grey, 40%); 
+
+
+    
+}  
+
+.ui-datepicker-unselectable .ui-state-default {  
+    background-color: lighten(@grey, 50%);
+    color:lighten(@grey, 30%);   
+}
+
+.ui-datepicker-calendar .ui-state-hover {  
+    background: #f7f7f7;  
+}  
+
+.ui-datepicker-calendar .ui-state-active {  
+    background: @blue;  
+    color: lighten(@grey, 40%);  
+    position: relative;  
+    margin: -1px;  
+}  
+
+.ui-datepicker-header
+{
+    background-image: url('/images?folder=background&file=wild_oliva.png');
+    .ui-datepicker-month
+    {
+        .SelectDateStyle;
+    }
+    .ui-datepicker-year
+    {
+        .SelectDateStyle;
+    }
+}
+
+.ui-datepicker-title
+{
+    text-align: center;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next
+{
+    display: inline-block;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: transparent;
+    background-repeat: no-repeat;
+    &:before,
+    &:after
+    {
+        .text_normal;
+        .FontSize(1);
+    }
+    &:hover
+    {
+        color: transparent;
+        &:before,
+        &:after
+        {
+            color: @grey;
+        }
+    }
+}
+
+
+.ui-datepicker-prev
+{
+    float: left;
+
+    margin-left: 10px;
+
+    background-position: center -30px;
+    &:before
+    {
+        content: '<';
+
+        color: white;
+    }
+}
+.ui-datepicker-next
+{
+    float: right;
+
+    margin-right: 10px;
+
+    background-position: center 0;
+    &:after
+    {
+        content: '>';
+
+        color: white;
+    }
+}
+
+
+.SelectDateStyle
+{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    background-color: lighten(@grey, 90%);
+
+    -webkit-appearance: none;
+    .border-radius(0);
+    .text_normal;
+    color:black;
+    .FontSize(1.2);
+}

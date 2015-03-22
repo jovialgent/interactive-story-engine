@@ -1,0 +1,97 @@
+.alertify .ajs-dialog {
+  background-color: white;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  .text_normal;
+  .FontSize(1.5);
+}
+.alertify .ajs-header {
+  font-family: 'league_gothic';
+  text-transform: uppercase;
+  .FontSize(3);
+  border-bottom: #eee 1px solid;
+  background-color: darken(@grey, 50%);
+  color: lighten(@grey, 20%);
+
+}
+.alertify .ajs-body {
+  
+  color: darken(@grey, 50%);
+  margin: 10px;
+  
+}
+.alertify .ajs-body .ajs-content .ajs-input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 2px;
+  border: 1px solid #CCC;
+}
+.alertify .ajs-body .ajs-content p {
+  margin: 0;
+}
+.alertify .ajs-footer {
+  background: #fbfbfb;
+  border-top: #eee 1px solid;
+  border-radius: 0 0 2px 2px;
+}
+.alertify .ajs-footer .ajs-buttons .ajs-button {
+  background-color: transparent;
+  color: #000;
+  border: 0;
+  .FontSize(1.4);
+  .text_bold;
+  color: @grey;
+  border: solid 1px darken(@grey, 50%);
+
+}
+.alertify .ajs-footer .ajs-buttons .ajs-button.ajs-ok {
+  background-color: fadeout(@green, 50%);
+
+  &:hover{
+    background-color: @green;
+  }
+
+  &:active{
+    color:lighten(@grey, 50%)
+  }
+}
+.alertify .ajs-footer .ajs-buttons .ajs-button.ajs-cancel {
+  background-color: fadeout(@red, 75%);
+
+
+
+  &:hover{
+    background-color: fadeout(@red, 50%);
+
+  }
+
+  &:active{
+    color:lighten(@grey, 50%);
+  }
+}
+
+
+.alertify-notifier .ajs-message {
+  color: lighten(@grey, 30%);
+  background: darken(@grey, 90%);;
+  .text_normal;
+  .FontSize(1.5);
+  text-align: center;
+  .box-shadow(0 1px 10px rgba(20,20,20,0.5));
+}
+.alertify-notifier .ajs-message.ajs-success {
+  color: darken(@grey, 90%);
+  background: lighten(@green, 25%);
+}
+.alertify-notifier .ajs-message.ajs-error {
+  color: darken(@grey, 90%);
+  background: lighten(@red, 25%);
+  
+}
+.alertify-notifier .ajs-message.ajs-warning {
+  color: darken(@grey, 30%);
+  background: @orange;
+  
+}
