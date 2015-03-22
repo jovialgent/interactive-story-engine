@@ -9,7 +9,7 @@ define([
 ], function($, _, Backbone, Alertify){
     
     var initialize = function(){
-       
+       Alertify.message("WORKS?");
 
     }
     
