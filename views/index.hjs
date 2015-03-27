@@ -7,7 +7,10 @@
     <script data-main="javascripts/main" src="javascripts/libs/require/require.min.js"></script>
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+   <div ng-controller="WelcomeController as weclomeCtrl">
+      <p>{{weclomeCtrl.greeting}}</p>
+
+  </div>
+
   </body>
 </html>
