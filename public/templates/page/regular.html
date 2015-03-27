@@ -1,8 +1,12 @@
-<div ng-controller="RegularPage">
-	<h1>{{title}}</h1>
-	<h2>{{subtitle}}</h2>
+<div ng-controller="RegularPage as regPageCtrl">
+	<h1>{{regPageCtrl.titlebar.title}}</h1>
+	<h2>{{regPageCtrl.titlebar.subtitle}}</h2>
 	<section>
-		<p>{{author}}{{createdOn | date}}</p>
+		<p>by {{regPageCtrl.titlebar.author}} </p>
+		<p>{{regPageCtrl.titlebar.createdOn | date}}</p>
+	</section>
+	<section>
+		<p ng-repeat="paragraph in regPageCtrl.pageBody.paragraphs">{{paragraph.content}}</p>
 	</section>
 
 </div>

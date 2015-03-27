@@ -4,11 +4,12 @@
         'underscore',
         'alertify',
         'angular',
-        './angular-dependancies/test'
-    ], function($, _, Alertify, angular, Test) {
+        './angular-dependancies/page'
+    ], function($, _, Alertify, angular, Page) {
         var initialize = function() {
-            Test.runTest();
-            angular.bootstrap(document, ['demo']);
+            Page.createPage();
+
+            angular.bootstrap(document, ['page']);
 
         }
 
