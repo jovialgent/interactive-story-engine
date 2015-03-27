@@ -4,7 +4,7 @@
         'underscore',
         'alertify',
         'angular',
-        'test'
+        './angular-dependancies/test'
     ], function($, _, Alertify, angular, Test) {
         var initialize = function() {
             Test.runTest();
