@@ -13,10 +13,10 @@ db.once('open', function(callback){
 
 var Page = mongoose.model('Page', page.schemaStructure);
 
-router.get('/:chapter/:page', function(req, res, next){
+router.get('/getPage', function(req, res, next){
 	page.getPage({
-		page : req.params.page,
-		chapter: req.params.chapter,
+		page : req.query.page,
+		chapter: req.query.chapter,
 		model : Page
 	}, function(err, data){
 		if(err){ 

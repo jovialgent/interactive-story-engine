@@ -1,0 +1,26 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'run', 'watch' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose run-script [ 'prewatch', 'watch', 'postwatch' ]
+5 info prewatch create_CYOA_viz@0.0.0
+6 info watch create_CYOA_viz@0.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info create_CYOA_viz@0.0.0 Failed to exec watch script
+9 error create_CYOA_viz@0.0.0 watch: `npm run watch-js`
+9 error Exit status 1
+10 error Failed at the create_CYOA_viz@0.0.0 watch script.
+10 error This is most likely a problem with the create_CYOA_viz package,
+10 error not with npm itself.
+10 error Tell the author that this fails on your system:
+10 error     npm run watch-js
+10 error You can get their info via:
+10 error     npm owner ls create_CYOA_viz
+10 error There is likely additional logging output above.
+11 error System Darwin 14.1.0
+12 error command "node" "/usr/local/bin/npm" "run" "watch"
+13 error cwd /Users/jovialgent/Documents/Create Choose Your Own Viz/interactive-story-engine
+14 error node -v v0.10.36
+15 error npm -v 1.4.28
+16 error code ELIFECYCLE
+17 verbose exit [ 1, true ]
